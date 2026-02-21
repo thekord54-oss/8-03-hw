@@ -21,9 +21,7 @@ cd server2
 echo "Server 2 Port 9999" > index.html
 python3 -m http.server 9999
 ```
-
-`При необходимости прикрепитe сюда скриншоты
-![Название скриншота 1](ссылка на скриншот 1)`
+![Servers](img/zapysk_2_server.jpg)
 
 Конфигурация HAProxy (L4)
 ```
@@ -47,8 +45,7 @@ Server 2 Port 9999
 Server 1 Port 8888
 Server 2 Port 9999
 ```
-`При необходимости прикрепитe сюда скриншоты
-![Название скриншота 1](ссылка на скриншот 1)`
+![L4](img/L4.png)
 
 ---
 
@@ -72,6 +69,8 @@ python3 -m http.server 9999
 # Server 3
 python3 -m http.server 7777
 ```
+
+![Servers](img/zapysk_3_server.jpg)
 
 Конфигурация HAProxy (L7)
 ```
@@ -101,8 +100,6 @@ curl http://localhost:8080
 ```
 503 Service Unavailable
 ```
-`При необходимости прикрепитe сюда скриншоты
-![Название скриншота 1](ссылка на скриншот 1)`
 
 `С доменом example.local`
 ```
@@ -110,5 +107,4 @@ curl -H "Host: example.local" http://localhost:8080
 ```
 Ответ
 
-`При необходимости прикрепитe сюда скриншоты
-![Название скриншота 1](ссылка на скриншот 1)`
+![L7](img/L7.png)
